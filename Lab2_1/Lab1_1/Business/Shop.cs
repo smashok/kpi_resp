@@ -18,7 +18,7 @@ namespace Lab1_1
 
         public override string ToString()
         {
-            return "Shop " + Name + "; ID = " + ID;
+            return string.Format ("Shop {0} ; ID = {1}" , Name, ID);
         }
     }
 }

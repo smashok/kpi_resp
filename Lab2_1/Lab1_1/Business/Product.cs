@@ -17,7 +17,7 @@ namespace Lab1_1
         }
         public override string ToString()
         {
-            return "Product " + Name + "; ID = " + ID + "; cost = " + Price;
+            return string.Format("Product {0}  ; ID = {1}  ; cost = {2}  ", Name, ID, Price); 
         }
     }
 }

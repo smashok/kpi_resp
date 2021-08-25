@@ -52,7 +52,7 @@ namespace Lab1_1
                             Search();
                             break;
                         case 2:
-                            Order();
+                            MakeOrder();
                             break;
                         default:
                             Console.WriteLine("Wrong number. Please, try again!");
@@ -92,7 +92,7 @@ namespace Lab1_1
             }
         }
 
-        static void Order()
+        static void MakeOrder()
         {
             Order order = new Order();
             order.products = new List<Product>();

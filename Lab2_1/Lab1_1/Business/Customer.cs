@@ -4,10 +4,11 @@ namespace Lab1_1
 {
     public class Customer
     {
-        public string Name;
-        public int ID;
-        private string Username;
-        private string Pass;
+        public string Name { get; set; }
+        public int ID { get; set; }
+        private string Username { get; set; }
+        private string Pass { get; set; } 
+
 
         public Customer(string n, string u, string p)
         {
@@ -20,7 +21,7 @@ namespace Lab1_1
 
         public override string ToString()
         {
-            return "Customer " + Name + "; ID = " + ID;
+            return string.Format("Customer {0}   ID {1} ", Name, ID);
         }
 
         public bool CheckLogin(string login, string pass)
